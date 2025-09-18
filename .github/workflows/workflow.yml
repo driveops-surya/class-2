@@ -1,4 +1,4 @@
-name: PR Events Demo
+name: PR-Events Demo
 
 on:
   pull_request:
