@@ -1,0 +1,12 @@
+name: PR Events Demo
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+
+jobs:
+  pr-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print event type
+        run: echo "This workflow was triggered by ${{ github.event.action }} event"
